@@ -78,8 +78,6 @@ h6 {
 	line-height: 1.5;
 	font-weight: 500;
 
-	background-color: var(--light-blue);
-
 	--dark-blue-x: hsl(217, 19%, 35%);
 	--dark-blue-m: hsl(217, 19%, 35%);
 	--dark-blue-l: hsl(214, 17%, 51%);
@@ -93,8 +91,8 @@ h6 {
 }
 
 body {
+	background-color: var(--light-blue);
 	display: flex;
-	place-items: center;
+	justify-content: center;
 	min-width: 320px;
-	min-height: 100vh;
 }

@@ -3,7 +3,7 @@ import BlogPreview from "./components/BlogPreview";
 
 function App() {
 	return (
-		<>
+		<div className="app">
 			<header className="header"></header>
 			<main className="main">
 				<BlogPreview />
@@ -21,7 +21,7 @@ function App() {
 					.
 				</div>
 			</footer>
-		</>
+		</div>
 	);
 }
 

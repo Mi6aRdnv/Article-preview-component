@@ -1,0 +1,56 @@
+.blog-preview {
+	display: flex;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	-ms-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+
+	background-color: #fff;
+	display: flex;
+
+	border-radius: 20px;
+	padding: clamp(10px, 3vw, 24px);
+
+	box-shadow: 13px 13px 57px 0px rgb(11 6 11 / 10%);
+}
+.blog-preview__img-box {
+}
+
+.blog-preview__img {
+}
+
+.blog-preview__content-box {
+}
+
+.blog-preview__title {
+}
+
+.blog-preview__text {
+}
+
+.blog-preview__footer {
+}
+
+.blog-preview__author {
+}
+
+.author__photo {
+}
+
+.author___text-box {
+}
+
+.author__name {
+}
+
+.author__date {
+}
+
+.blog-preview__share-btn {
+}
+
+.blog-preview__share-btn-icon {
+}
