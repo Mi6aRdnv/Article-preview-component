@@ -1,5 +1,4 @@
 .blog-preview {
-	display: flex;
 	position: fixed;
 	left: 50%;
 	top: 50%;
@@ -10,47 +9,114 @@
 
 	background-color: #fff;
 	display: flex;
+	align-items: center;
+	overflow: hidden;
 
-	border-radius: 20px;
-	padding: clamp(10px, 3vw, 24px);
+	border-radius: 10px;
+	width: 730px;
 
 	box-shadow: 13px 13px 57px 0px rgb(11 6 11 / 10%);
+	/* Consider adding padding if content touches the edges */
 }
 .blog-preview__img-box {
+	user-select: none;
+	overflow: hidden;
+	max-width: 285px;
+	max-height: 280px;
 }
 
 .blog-preview__img {
+	object-fit: cover;
+	object-position: left;
+	max-height: 280px;
 }
 
 .blog-preview__content-box {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 20px;
+	max-width: 450px;
+	padding: 4px clamp(5px, 3vw, 40px);
 }
 
 .blog-preview__title {
+	color: var(--dark-blue-m);
+	font-size: 20px;
+	font-weight: 700;
 }
 
 .blog-preview__text {
+	color: var(--dark-blue-l);
+	line-height: 1.5;
 }
 
 .blog-preview__footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
-.blog-preview__author {
+.author {
+	display: flex;
+	align-items: center;
 }
 
 .author__photo {
+	max-width: 40px;
+	max-height: 40px;
+	border-radius: 100px;
 }
 
-.author___text-box {
+.author__text-box {
+	margin-left: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .author__name {
+	font-weight: 700;
+	color: var(--dark-blue-m);
 }
 
 .author__date {
+	color: var(--blue);
+	font-size: 13px;
 }
 
 .blog-preview__share-btn {
+	user-select: none;
+	width: 29px;
+	height: 29px;
+	padding: 3px;
+	border-radius: 50px;
+	overflow: hidden;
+	background: var(--light-blue);
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .blog-preview__share-btn-icon {
+	display: inline-block;
+	width: 65%;
+	height: 65%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+	.blog-preview {
+		width: 95vw;
+		max-width: 350px;
+		flex-direction: column;
+	}
+	.blog-preview__img-box {
+		max-width: 100%;
+		max-height: 180px;
+	}
+	.blog-preview__content-box {
+		max-width: 100%;
+	}
 }
