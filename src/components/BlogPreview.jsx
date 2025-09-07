@@ -2,7 +2,7 @@ import Tooltip from "./Tooltip";
 import "./BlogPreview.css";
 // import { useState } from "react";
 import PreviewImg from "../assets/images/drawers.jpg";
-import ShareIcon from "../assets/images/icon-share.svg";
+import ShareIcon from "../assets/icons/icon-share.svg";
 import AuthorPhoto from "../assets/images/avatar-michelle.jpg";
 
 export default function BlogPreview() {
@@ -13,7 +13,7 @@ export default function BlogPreview() {
 				<img
 					className="blog-preview__img"
 					src={PreviewImg}
-					alt="Blog preview"
+					alt="Drawers furniture preview"
 				/>
 			</div>
 			<div className="blog-preview__content-box">
@@ -28,16 +28,21 @@ export default function BlogPreview() {
 				</p>
 				<div className="blog-preview__footer">
 					<div className="blog-preview__author author">
-						<img src={AuthorPhoto} alt="" className="author__photo" />
+						<img
+							src={AuthorPhoto}
+							alt="Michelle Appleton"
+							className="author__photo"
+						/>
 						<div className="author__text-box">
 							<p className="author__name">Michelle Appleton</p>
 							<p className="author__date">28 Jun 2020</p>
 						</div>
 					</div>
-					<button className="blog-preview__share-btn">
+					<Tooltip />
+					<button className="blog-preview__share-btn blog-preview__share-btn--active">
 						<img
 							src={ShareIcon}
-							alt=""
+							alt="Share"
 							className="blog-preview__share-btn-icon"
 						/>
 					</button>
